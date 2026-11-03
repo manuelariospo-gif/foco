@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FOCO, Festival Internacional Audiovisual. Cine, creación e ideas en Medellín.">
+    <title>FOCO | Festival Internacional Audiovisual</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <div class="contenedor encabezado-contenido">
+            <a href="index.html" class="marca" aria-label="FOCO, inicio">
+                <img src="Logo de festival audiovisual FOCO.png" alt="Logo FOCO" class="logo-imagen">
+            </a>
+
+            <nav class="menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#festival">El festival</a>
+                <a href="#programacion">Programación</a>
+                <a href="#noticias">Noticias</a>
+                <a href="#contacto">Contacto</a>
+                <a href="#entradas" class="boton-menu">Comprar entradas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="portada" id="inicio">
+            <div class="contenedor portada-contenido">
+                <div class="portada-texto">
+                    <p class="sobretitulo">CINE · CREACIÓN · IDEAS</p>
+
+                    <img src="Logo de festival audiovisual FOCO.png" alt="Logo FOCO" class="logo-imagen logo-portada">
+
+                    <p class="frase-portada">Historias que conectan culturas,<br>miradas que transforman.</p>
+
+                    <div class="datos-evento">
+                        <p><strong>12 — 16</strong> de noviembre de 2026</p>
+                        <p><span class="punto-naranja">●</span> Medellín, Colombia</p>
+                    </div>
+
+                    <div class="portada-botones">
+                        <a href="#programacion" class="boton boton-claro">Conoce la programación</a>
+                        <a href="#entradas" class="boton boton-naranja">Comprar entradas</a>
+                    </div>
+                </div>
+
+                <div class="portada-imagen">
+                    <img src="imagen 1.jpeg"
+                         alt="Cámara de cine durante una producción audiovisual">
+                    <p class="texto-imagen">Una mirada. Muchas historias.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion festival" id="festival">
+            <div class="contenedor">
+                <div class="titulo-seccion">
+                    <span class="etiqueta">CONOCE FOCO</span>
+                    <h2>¿Qué es FOCO?</h2>
+                </div>
+
+                <div class="festival-contenido">
+                    <div class="festival-descripcion">
+                        <p>
+                            FOCO es un festival internacional dedicado a celebrar el cine, la fotografía y la
+                            creación audiovisual como formas de expresión, comunicación y transformación cultural.
+                            Es un espacio de encuentro para realizadores, productores, estudiantes, artistas y
+                            amantes del mundo audiovisual, donde las historias se convierten en una oportunidad
+                            para conectar culturas, compartir perspectivas y descubrir nuevas formas de ver el mundo.
+                        </p>
+
+                        <p>
+                            A través de proyecciones cinematográficas, exhibiciones de cortometrajes, talleres,
+                            conversatorios y encuentros con profesionales del sector, FOCO busca impulsar el
+                            talento creativo, promover el intercambio de conocimientos y abrir espacios para las
+                            nuevas voces de la industria. Más que un festival, es una experiencia que invita a
+                            explorar el poder de las imágenes, contar historias y construir conexiones a través
+                            de la comunicación audiovisual.
+                        </p>
+
+                        <a href="#programacion" class="enlace-naranja">Descubre lo que tenemos preparado →</a>
+                    </div>
+
+                    <section id="seccion-cuenta-regresiva" style="text-align: center; padding: 20px; font-family: sans-serif;">
+                        <h2>Cuenta regresiva</h2>
+                        <div id="temporizador" style="font-size: 2rem; font-weight: bold; color: #2c3e50;"></div>
+                    </section>
+
+                    <script>
+                        const fechaObjetivo = new Date("2026-11-12T00:00:00").getTime();
+
+                        const contador = setInterval(() => {
+                            const ahora = new Date().getTime();
+                            const diferencia = fechaObjetivo - ahora;
+
+                            if (diferencia <= 0) {
+                                clearInterval(contador);
+                                document.getElementById("temporizador").innerText = "¡El evento ha comenzado!";
+                                return;
+                            }
+
+                            const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+                            const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+                            const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+                            document.getElementById("temporizador").innerText =
+                                `${dias}d ${horas}h ${minutos}m ${segundos}s`;
+                        }, 1000);
+                    </script>
+
+                    <aside class="noticias" id="noticias">
+                        <h3>Noticias</h3>
+
+                        <article class="noticia">
+                            <img src="imagen curso fotografia.jpeg"
+                                 alt="Cámara fotográfica">
+                            <div>
+                                <h4>Curso de fotografía</h4>
+                                <p>12 — 16 de noviembre</p>
+                            </div>
+                        </article>
+
+                        <article class="noticia">
+                            <img src="imagen curso de iluminacion.jpeg"
+                                 alt="Sala de cine">
+                            <div>
+                                <h4>Curso de iluminación</h4>
+                                <p>Durante el festival</p>
+                            </div>
+                        </article>
+
+                        <article class="noticia">
+                            <img src="imagen convocatoria para cortometraje.jpeg"
+                                 alt="Proyección audiovisual">
+                            <div>
+                                <h4>Convocatoria para cortometrajes</h4>
+                                <p>Conoce las novedades</p>
+                            </div>
+                        </article>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion actividades" id="programacion">
+            <div class="contenedor">
+                <div class="encabezado-actividades">
+                    <div>
+                        <span class="etiqueta">VIVE LA EXPERIENCIA</span>
+                        <h2>Un festival, muchas formas de crear</h2>
+                    </div>
+                    <p>Encuentra espacios para aprender, compartir y disfrutar del universo audiovisual.</p>
+                </div>
+
+                <div class="tarjetas-actividades">
+                    <article class="tarjeta">
+                        <img src="imagen talleres.jpeg"
+                             alt="Personas participando en un taller">
+                        <div class="tarjeta-contenido">
+                            <span class="numero-tarjeta">01 / APRENDER</span>
+                            <h3>Talleres</h3>
+                            <p>Espacios para explorar técnicas, herramientas y nuevas formas de contar historias.</p>
+                            <p class="fecha-tarjeta">12 — 16 de noviembre</p>
+                            <p class="lugar-tarjeta">Teatro Pablo Tobón Uribe</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img src="imagen cine.jpeg"
+                             alt="Pantalla de cine en una sala">
+                        <div class="tarjeta-contenido">
+                            <span class="numero-tarjeta">02 / EXPLORAR</span>
+                            <h3>Cine</h3>
+                            <p>Proyecciones cinematográficas y muestras de cortometrajes de distintas miradas.</p>
+                            <p class="fecha-tarjeta">12 — 14 de noviembre</p>
+                            <p class="lugar-tarjeta">Cine Colombia El Tesoro</p>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img src="imagen conversatorios.jpeg"
+                             alt="Encuentro de conversación frente a un público">
+                        <div class="tarjeta-contenido">
+                            <span class="numero-tarjeta">03 / CONECTAR</span>
+                            <h3>Conversatorios</h3>
+                            <p>Encuentros con profesionales para compartir experiencias, ideas y conocimientos.</p>
+                            <p class="fecha-tarjeta">12 — 16 de noviembre</p>
+                            <p class="lugar-tarjeta">Universidad EAFIT</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="entradas" id="entradas">
+            <div class="contenedor entradas-contenido">
+                <div>
+                    <span class="etiqueta etiqueta-clara">12 — 16 NOVIEMBRE 2026</span>
+                    <h2>Las historias también se viven.</h2>
+                    <p>Haz parte de FOCO y encuentra nuevas formas de mirar el mundo.</p>
+                </div>
+                <a href="mailto:isabela.goenaga@gmail.com?subject=Informacion%20sobre%20entradas%20FOCO"
+                   class="boton boton-claro">Solicitar información</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="pie-pagina" id="contacto">
+        <div class="contenedor pie-contenido">
+            <a href="#inicio" class="marca marca-pie">
+                <img src="Logo de festival audiovisual FOCO.png" alt="Logo FOCO" class="logo-imagen">
+            </a>
+
+            <div class="pie-informacion">
+                <p><strong>FOCO — Festival Internacional Audiovisual</strong></p>
+                <p>Medellín, Colombia · 12 al 16 de noviembre de 2026</p>
+                <a href="mailto:isabela.goenaga@gmail.com">isabela.goenaga@gmail.com</a>
+            </div>
+
+            <div class="pie-enlaces">
+                <a href="#inicio">Inicio</a>
+                <a href="#festival">El festival</a>
+                <a href="#programacion">Programación</a>
+                <a href="#entradas">Entradas</a>
+            </div>
+        </div>
+        <div class="contenedor derechos">
+            <p>© 2026 FOCO Festival Internacional Audiovisual. Todos los derechos reservados.</p>
+            <p>Diseño y desarrollo: Isabela Goenaga · Manuela Ríos</p>
+        </div>
+    </footer>
+
+</body>
+</html>

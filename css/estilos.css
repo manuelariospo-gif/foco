@@ -1,0 +1,737 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0%;
+    background-color: #f5f0e7;
+    color: #24211f;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.encabezado {
+    background-color: #fffdf8;
+    padding: 18px 0;
+    border-bottom: 1px solid #e8dfd2;
+}
+
+.encabezado-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 18px;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    color: #171513;
+}
+
+/* Imagen del logo FOCO */
+.marca .logo-imagen {
+    width: 150px;
+    height: auto;
+}
+
+.logo-portada {
+    width: 240px;
+    height: auto;
+    margin: 10px 0 0;
+}
+
+.logo-texto {
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: -5px;
+    line-height: 1;
+}
+
+.logo-o {
+    color: #f07845;
+}
+
+.logo-descripcion {
+    font-size: 8px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
+    width: 100%;
+}
+
+.menu a {
+    color: #4b4540;
+    font-size: 14px;
+    padding: 7px 10px;
+}
+
+.menu a:visited {
+    color: #6c625b;
+}
+
+.menu a:hover {
+    color: #ed7848;
+}
+
+.menu .boton-menu {
+    background-color: #f07845;
+    color: white;
+    border-radius: 25px;
+    padding: 9px 18px;
+}
+
+.menu .boton-menu:hover {
+    background-color: #c95d31;
+    color: white;
+}
+
+
+.portada {
+    padding: 55px 0;
+    background-color: #eee6d9;
+}
+
+.portada-contenido {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+}
+
+.portada-texto {
+    text-align: center;
+}
+
+.sobretitulo {
+    color: #71675e;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+}
+
+.titulo-foco {
+    font-size: 90px;
+    line-height: 1;
+    letter-spacing: -9px;
+    margin: 10px 0 0;
+    color: #171513;
+}
+
+.titulo-foco span {
+    color: #f07845;
+}
+
+.subtitulo-foco {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 1.4;
+    margin-top: 5px;
+}
+
+.frase-portada {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 1.35;
+    margin: 25px 0;
+}
+
+.datos-evento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3px;
+    font-size: 14px;
+}
+
+.datos-evento p {
+    margin: 3px 0;
+}
+
+.punto-naranja {
+    color: #f07845;
+}
+
+.portada-botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12px;
+    margin-top: 25px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 11px 20px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton-claro {
+    background-color: #fffdf8;
+    color: #29231f;
+}
+
+.boton-claro:visited {
+    color: #29231f;
+}
+
+.boton-claro:hover {
+    background-color: #e4d8c8;
+    color: #29231f;
+}
+
+.boton-naranja {
+    background-color: #f07845;
+    color: white;
+}
+
+.boton-naranja:visited {
+    color: white;
+}
+
+.boton-naranja:hover {
+    background-color: #c95d31;
+    color: white;
+}
+
+.portada-imagen img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.texto-imagen {
+    color: #756b60;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 13px;
+    font-style: italic;
+    text-align: right;
+}
+
+.seccion {
+    padding: 65px 0;
+}
+
+.titulo-seccion {
+    margin-bottom: 25px;
+}
+
+.etiqueta {
+    color: #e87543;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.titulo-seccion h2,
+.encabezado-actividades h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1.2;
+    margin: 8px 0;
+}
+
+.festival-contenido {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+}
+
+.festival-descripcion p {
+    color: #514a43;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.enlace-naranja {
+    color: #d96537;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.enlace-naranja:visited {
+    color: #9e4b2c;
+}
+
+.enlace-naranja:hover {
+    color: #24211f;
+}
+
+.noticias {
+    border-top: 1px solid #d9cfc1;
+    padding-top: 20px;
+}
+
+.noticias h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 23px;
+    font-weight: normal;
+    margin: 0 0 18px;
+}
+
+.noticia {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    margin-bottom: 16px;
+}
+
+.noticia img {
+    width: 85px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.noticia h4 {
+    font-size: 13px;
+    margin: 0 0 5px;
+}
+
+.noticia p {
+    color: #83786d;
+    font-size: 11px;
+    margin: 0;
+}
+
+.actividades {
+    background-color: #ebe2d5;
+}
+
+.encabezado-actividades {
+    margin-bottom: 30px;
+}
+
+.encabezado-actividades > p {
+    color: #6d6258;
+    font-size: 14px;
+    max-width: 450px;
+}
+
+.tarjetas-actividades {
+    display: flex;
+    flex-direction: column;
+    row-gap: 22px;
+}
+
+.tarjeta {
+    background-color: #fffdf8;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.tarjeta-contenido {
+    padding: 22px;
+}
+
+.numero-tarjeta {
+    color: #e87543;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.tarjeta h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: normal;
+    margin: 8px 0;
+}
+
+.tarjeta-contenido > p {
+    color: #625950;
+    font-size: 13px;
+}
+
+.tarjeta .fecha-tarjeta {
+    color: #d96537;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.tarjeta .lugar-tarjeta {
+    margin-top: 3px;
+}
+
+.entradas {
+    background-color: #292521;
+    color: white;
+    padding: 55px 0;
+}
+
+.entradas-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+}
+
+.etiqueta-clara {
+    color: #ff9a6d;
+}
+
+.entradas h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1.2;
+    margin: 12px 0;
+}
+
+.entradas p {
+    color: #d5ccc2;
+    font-size: 14px;
+}
+
+.pie-pagina {
+    background-color: #f8f4ed;
+    padding: 40px 0 15px;
+}
+
+.pie-contenido {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.marca-pie {
+    width: fit-content;
+}
+
+.pie-informacion p,
+.pie-informacion a {
+    color: #6d6258;
+    font-size: 12px;
+}
+
+.pie-informacion p {
+    margin: 4px 0;
+}
+
+.pie-informacion a:hover {
+    color: #e87543;
+}
+
+.pie-enlaces {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.pie-enlaces a {
+    color: #6d6258;
+    font-size: 12px;
+}
+
+.pie-enlaces a:visited {
+    color: #6d6258;
+}
+
+.pie-enlaces a:hover {
+    color: #e87543;
+}
+
+.derechos {
+    border-top: 1px solid #ded5c9;
+    margin-top: 30px;
+    padding-top: 15px;
+}
+
+.derechos p {
+    color: #8a8075;
+    font-size: 10px;
+    margin: 5px 0;
+}
+
+@media (min-width: 576px) {
+
+    .contenedor {
+        width: 88%;
+    }
+
+    .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 4px;
+    }
+
+    .portada {
+        padding: 65px 0;
+    }
+
+    .titulo-foco {
+        font-size: 110px;
+    }
+
+    .portada-botones {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .portada-imagen img {
+        height: 330px;
+    }
+
+    .noticia img {
+        width: 100px;
+        height: 80px;
+    }
+
+    .tarjetas-actividades {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .tarjeta {
+        flex: 1 1 220px;
+    }
+
+    .tarjeta img {
+        height: 160px;
+    }
+
+    .entradas-contenido {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .encabezado-contenido {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu {
+        width: auto;
+        justify-content: flex-end;
+    }
+
+    .menu a {
+        font-size: 12px;
+        padding: 7px;
+    }
+
+    .portada-contenido {
+        flex-direction: row;
+        align-items: center;
+        column-gap: 35px;
+    }
+
+    .portada-texto {
+        flex: 1;
+        text-align: left;
+    }
+
+    .portada-imagen {
+        flex: 1;
+    }
+
+    .portada-imagen img {
+        height: 350px;
+    }
+
+    .datos-evento {
+        align-items: flex-start;
+    }
+
+    .portada-botones {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .titulo-foco {
+        font-size: 105px;
+    }
+
+    .festival-contenido {
+        flex-direction: row;
+        column-gap: 35px;
+    }
+
+    .festival-descripcion {
+        flex-grow: 7;
+    }
+
+    .noticias {
+        flex-grow: 3;
+        border-top: 0;
+        border-left: 1px solid #d9cfc1;
+        padding-top: 0;
+        padding-left: 25px;
+    }
+
+    .tarjeta {
+        flex: 1 1 200px;
+    }
+
+    .pie-contenido {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .contenedor {
+        width: 86%;
+    }
+
+    .encabezado {
+        padding: 20px 0;
+    }
+
+    .logo-texto {
+        font-size: 48px;
+    }
+
+    .menu {
+        column-gap: 8px;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    .portada {
+        padding: 75px 0;
+    }
+
+    .portada-contenido {
+        column-gap: 65px;
+    }
+
+    .portada-imagen img {
+        height: 410px;
+    }
+
+    .titulo-foco {
+        font-size: 125px;
+    }
+
+    .frase-portada {
+        font-size: 23px;
+    }
+
+    .seccion {
+        padding: 85px 0;
+    }
+
+    .titulo-seccion h2,
+    .encabezado-actividades h2 {
+        font-size: 40px;
+    }
+
+    .festival-contenido {
+        column-gap: 55px;
+    }
+
+    .festival-descripcion p {
+        font-size: 15px;
+    }
+
+    .noticias {
+        padding-left: 35px;
+    }
+
+    .tarjetas-actividades {
+        column-gap: 25px;
+    }
+
+    .tarjeta img {
+        height: 190px;
+    }
+
+
+    .entradas {
+        padding: 70px 0;
+    }
+
+    .entradas h2 {
+        font-size: 42px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .portada-contenido {
+        column-gap: 85px;
+    }
+
+    .portada-imagen img {
+        height: 450px;
+    }
+
+    .titulo-foco {
+        font-size: 145px;
+    }
+
+    .tarjeta img {
+        height: 220px;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .contenedor {
+        max-width: 1250px;
+    }
+
+    .portada {
+        padding: 90px 0;
+    }
+
+    .portada-imagen img {
+        height: 480px;
+    }
+}
+
